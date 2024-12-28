@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.albertsome_task.R
 import com.example.albertsome_task.adapter.UserAdapter
 import com.example.albertsome_task.databinding.FragmentHomeBinding
@@ -38,7 +39,11 @@ class FragmentHome : Fragment() {
     }
 
     private fun setupUserList(){
-        adapter = UserAdapter()
+        adapter = UserAdapter({user ->
+            val action = FragmentHomeDirections.actionFragmentHomeToFragmentUserDetail(user)
+            findNavController().navigate(action)
+        })
+
         binding.rvUser.adapter = adapter
     }
 

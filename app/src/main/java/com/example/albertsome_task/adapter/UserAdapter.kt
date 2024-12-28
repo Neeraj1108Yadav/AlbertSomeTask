@@ -8,7 +8,7 @@ import com.example.albertsome_task.databinding.ListUserBinding
 import com.example.albertsome_task.model.User
 import com.example.albertsome_task.ui.home.UserDiffCallback
 
-class UserAdapter() : ListAdapter<User,UserAdapter.ViewHolder>(UserDiffCallback()){
+class UserAdapter(private val onClickListener:(User) -> Unit) : ListAdapter<User,UserAdapter.ViewHolder>(UserDiffCallback()){
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -23,8 +23,11 @@ class UserAdapter() : ListAdapter<User,UserAdapter.ViewHolder>(UserDiffCallback(
         holder: ViewHolder,
         position: Int
     ) {
-        val item = getItem(position)
-        holder.binding.user = item
+        val user = getItem(position)
+        holder.binding.user = user
+        holder.binding.root.setOnClickListener{
+            onClickListener.invoke(getItem(holder.adapterPosition))
+        }
         holder.binding.executePendingBindings()
     }
 

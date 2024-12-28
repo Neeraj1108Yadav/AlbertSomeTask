@@ -9,10 +9,23 @@
         android:id="@+id/fragmentHome"
         android:name="com.example.albertsome_task.ui.home.FragmentHome"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentUserDetail"
+            app:destination="@id/fragmentUserDetail" />
+    </fragment>
+
     <fragment
         android:id="@+id/fragmentUserDetail"
         android:name="com.example.albertsome_task.ui.detail.FragmentUserDetail"
         android:label="fragment_user_detail"
-        tools:layout="@layout/fragment_user_detail" />
+        tools:layout="@layout/fragment_user_detail">
+
+        <argument
+            android:name="user"
+            app:argType="com.example.albertsome_task.model.User"/>
+
+    </fragment>
+
 </navigation>
