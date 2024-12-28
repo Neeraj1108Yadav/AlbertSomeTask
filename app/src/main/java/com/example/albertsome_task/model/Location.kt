@@ -9,7 +9,7 @@ data class UserLocation(
     val city: String,
     val state:String,
     val country:String,
-    val postCode:Int,
+    val postcode: String,
     val coordinates: Coordinates,
     val timezone : TimeZone,
 ) : Parcelable
