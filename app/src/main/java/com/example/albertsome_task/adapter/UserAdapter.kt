@@ -8,7 +8,7 @@ import com.example.albertsome_task.databinding.ListUserBinding
 import com.example.albertsome_task.model.User
 import com.example.albertsome_task.ui.home.UserDiffCallback
 
-class UserAdapter(private var userList: List<User>) : ListAdapter<User,UserAdapter.ViewHolder>(UserDiffCallback()){
+class UserAdapter() : ListAdapter<User,UserAdapter.ViewHolder>(UserDiffCallback()){
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -23,13 +23,9 @@ class UserAdapter(private var userList: List<User>) : ListAdapter<User,UserAdapt
         holder: ViewHolder,
         position: Int
     ) {
-        val item = userList[position]
+        val item = getItem(position)
         holder.binding.user = item
         holder.binding.executePendingBindings()
-    }
-
-    override fun getItemCount(): Int {
-       return userList.size
     }
 
     inner class ViewHolder(val binding: ListUserBinding) : RecyclerView.ViewHolder(binding.root)

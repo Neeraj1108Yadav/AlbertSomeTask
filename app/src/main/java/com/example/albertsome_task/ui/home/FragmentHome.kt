@@ -33,12 +33,12 @@ class FragmentHome : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupUserList()
-        viewModel.getUser()
         observeUser()
+        viewModel.getUser()
     }
 
     private fun setupUserList(){
-        adapter = UserAdapter(listOf())
+        adapter = UserAdapter()
         binding.rvUser.adapter = adapter
     }
 
