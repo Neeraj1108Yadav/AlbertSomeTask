@@ -1,5 +1,6 @@
 package com.example.albertsome_task.repo
 
+import android.util.Log
 import com.example.albertsome_task.listener.RandomUserListener
 import com.example.albertsome_task.model.User
 import com.example.albertsome_task.model.UserResult
@@ -22,6 +23,7 @@ class UserRepo @Inject constructor(val apiService: ApiService) : RandomUserListe
                 }
             }
         }catch (e: Exception){
+            e.message?.let { Log.e("App",it) }
             NetworkResult.Failure(e.toString())
         }
     }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Config for all connections -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">randomuser.me</domain>
+    </domain-config>
+</network-security-config>

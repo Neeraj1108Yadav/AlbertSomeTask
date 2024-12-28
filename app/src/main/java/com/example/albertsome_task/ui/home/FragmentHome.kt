@@ -46,7 +46,7 @@ class FragmentHome : Fragment() {
         viewModel.userData.observe(viewLifecycleOwner){items ->
            when(items){
                is NetworkResult.Success -> {
-                   adapter.submitList(items.data.result)
+                   adapter.submitList(items.data.results)
                }
                is NetworkResult.Failure -> {
 

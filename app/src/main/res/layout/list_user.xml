@@ -11,7 +11,6 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_margin="@dimen/dp_8"
         app:cardCornerRadius="@dimen/dp_8"
         app:cardBackgroundColor="@color/white">
@@ -60,7 +59,8 @@
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/sp_15"
                     android:layout_marginStart="@dimen/dp_3"
-                    android:text="Neeraj Yadav"/>
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:text="@{user.name.title + user.name.first + user.name.last}"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -82,7 +82,8 @@
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/sp_15"
                     android:layout_marginStart="@dimen/dp_3"
-                    android:text="M N 73,73 Arazi 134"/>
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:text="@{user.location.city + user.location.state + user.location.country}"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 

@@ -1,7 +1,7 @@
 package com.example.albertsome_task.model
 
 data class UserResult(
-    val result: List<User>
+    val results: List<User>
 )
 
 data class User(

@@ -1,6 +1,7 @@
 package com.example.albertsome_task.di
 
 import android.content.Context
+import com.example.albertsome_task.constant.AppConstant
 import com.example.albertsome_task.network.ApiService
 import com.example.albertsome_task.network.NetworkConnectionInterceptor
 import dagger.Module
@@ -27,7 +28,7 @@ class NetworkModule {
     fun provideRetrofitBuild(): Retrofit.Builder{
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("")
+            .baseUrl(AppConstant.BASE_URL)
     }
 
     @Provides
