@@ -7,7 +7,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.albertsome_task.ui.home.HomeViewModel" />
+            type="com.example.albertsome_task.ui.home.UserPagerViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

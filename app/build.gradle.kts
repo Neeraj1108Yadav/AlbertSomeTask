@@ -82,6 +82,9 @@ dependencies {
     //Glide
     implementation(libs.androidx.glide)
 
+    //Pagination
+    implementation(libs.androidx.paging)
+
 }
 
 kapt {

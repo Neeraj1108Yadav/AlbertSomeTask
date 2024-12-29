@@ -1,6 +1,7 @@
 package com.example.albertsome_task.model
 
 import android.os.Parcelable
+import androidx.recyclerview.widget.DiffUtil
 import kotlinx.parcelize.Parcelize
 
 data class UserResult(
@@ -17,7 +18,28 @@ data class User(
     val phone:String,
     val cell:String,
     val picture: UserPicture
-) : Parcelable
+) : Parcelable{
+    companion object{
+        val DIFF_CALLBACK = object : DiffUtil.ItemCallback<User>(){
+            override fun areItemsTheSame(
+                oldItem: User,
+                newItem: User
+            ): Boolean {
+                // Compare unique IDs or reference equality
+                return oldItem === newItem
+            }
+
+            override fun areContentsTheSame(
+                oldItem: User,
+                newItem: User
+            ): Boolean {
+                // Compare content equality
+                return oldItem == newItem
+            }
+
+        }
+    }
+}
 
 @Parcelize
 data class UserName(

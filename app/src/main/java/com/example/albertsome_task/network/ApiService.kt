@@ -12,4 +12,11 @@ interface ApiService {
         @Query("results") result:Int = 5,
         @Query("inc") inc: String = "name,gender,location,email,dob,phone,cell,picture"
     ) : Response<UserResult>
+
+    @GET("api/")
+    suspend fun getRandomUserPageWise(
+        @Query("page") page:Int = 1,
+        @Query("results") result:Int = 5,
+        @Query("inc") inc: String = "name,gender,location,email,dob,phone,cell,picture"
+    ) : Response<UserResult>
 }

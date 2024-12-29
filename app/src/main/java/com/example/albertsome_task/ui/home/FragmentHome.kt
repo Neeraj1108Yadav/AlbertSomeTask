@@ -6,20 +6,26 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.example.albertsome_task.R
 import com.example.albertsome_task.adapter.UserAdapter
+import com.example.albertsome_task.adapter.UserPagingDataAdapter
 import com.example.albertsome_task.databinding.FragmentHomeBinding
 import com.example.albertsome_task.sealed.NetworkResult
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class FragmentHome : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
-    private val viewModel: HomeViewModel by viewModels<HomeViewModel>()
-    private lateinit var adapter: UserAdapter
+    //private val viewModel: HomeViewModel by viewModels<HomeViewModel>()
+    private val viewModel: UserPagerViewModel by viewModels<UserPagerViewModel>()
+    //private lateinit var adapter: UserAdapter
+    private lateinit var adapter: UserPagingDataAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,11 +42,11 @@ class FragmentHome : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupUserList()
         observeUser()
-        viewModel.getUser()
+        //viewModel.getUser()
     }
 
     private fun setupUserList(){
-        adapter = UserAdapter({user ->
+        adapter = UserPagingDataAdapter({user ->
             val action = FragmentHomeDirections.actionFragmentHomeToFragmentUserDetail(user)
             /*val navOptions = NavOptions.Builder()
                 .setPopUpTo(R.id.fragmentHome,false)
@@ -52,7 +58,7 @@ class FragmentHome : Fragment() {
     }
 
     private fun observeUser(){
-        viewModel.userData.observe(viewLifecycleOwner){items ->
+        /*viewModel.userData.observe(viewLifecycleOwner){items ->
            when(items){
                is NetworkResult.Success -> {
                    adapter.submitList(items.data.results)
@@ -64,6 +70,12 @@ class FragmentHome : Fragment() {
 
                }
            }
+        }*/
+
+        lifecycleScope.launch{
+            viewModel.flow.collectLatest {pagingData->
+                adapter.submitData(pagingData)
+            }
         }
     }
 }
