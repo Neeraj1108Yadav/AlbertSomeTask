@@ -16,7 +16,7 @@ interface ApiService {
     @GET("api/")
     suspend fun getRandomUserPageWise(
         @Query("page") page:Int = 1,
-        @Query("results") result:Int = 5,
+        @Query("results") result:Int = 10,
         @Query("inc") inc: String = "name,gender,location,email,dob,phone,cell,picture"
     ) : Response<UserResult>
 }

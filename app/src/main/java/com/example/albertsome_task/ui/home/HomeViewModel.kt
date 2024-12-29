@@ -19,7 +19,7 @@ class HomeViewModel @Inject constructor(private val userListener: RandomUserList
 
     fun getUser(){
         viewModelScope.launch{
-            _userData.value = userListener.getUser()
+            //_userData.value = userListener.getUser()
         }
     }
 }
