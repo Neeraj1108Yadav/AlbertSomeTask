@@ -79,9 +79,8 @@ dependencies {
     implementation(libs.androidx.navigation)
     implementation(libs.androidx.navigation.ui)
 
-    //Coil
-    implementation(libs.io.coil.kt.coil3)
-    implementation(libs.io.coil.kt.coil3.network)
+    //Glide
+    implementation(libs.androidx.glide)
 
 }
 
