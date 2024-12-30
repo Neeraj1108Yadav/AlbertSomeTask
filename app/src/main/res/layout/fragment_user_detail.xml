@@ -13,6 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         tools:context=".ui.detail.FragmentUserDetail">
 
         <androidx.appcompat.widget.Toolbar
@@ -20,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
             android:elevation="@dimen/dp_3">
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -28,6 +30,7 @@
                 android:text="User Detail"
                 android:gravity="center"
                 android:textSize="@dimen/sp_18"
+                android:textColor="@color/text_color"
                 android:fontFamily="@font/poppins_medium">
 
             </androidx.appcompat.widget.AppCompatTextView>
@@ -54,6 +57,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="@dimen/sp_24"
             android:layout_marginTop="@dimen/dp_13"
+            android:textColor="@color/text_color"
             android:text="@{viewModel.user.name.title+' '+viewModel.user.name.first+' '+viewModel.user.name.last}"
             android:fontFamily="@font/poppins_semi_bold"/>
 
@@ -72,6 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/sp_20"
+                android:textColor="@color/text_color"
                 android:text="@{viewModel.user.gender+','}"
                 android:fontFamily="@font/poppins_semi_bold"/>
 
@@ -81,6 +86,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/sp_20"
                 android:layout_marginStart="@dimen/dp_5"
+                android:textColor="@color/text_color"
                 android:text="@{String.valueOf(viewModel.user.dob.age)}"
                 android:fontFamily="@font/poppins_semi_bold"/>
 

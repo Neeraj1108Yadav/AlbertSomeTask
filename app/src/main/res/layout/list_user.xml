@@ -55,6 +55,7 @@
                     android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="@dimen/dp_3"
                     android:layout_marginEnd="@dimen/dp_8"
+                    android:textColor="@color/text_color"
                     android:text="@{user.name.title+' '+user.name.first+' '+user.name.last}"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -83,6 +84,7 @@
                     android:fontFamily="@font/poppins_regular"
                     android:layout_marginStart="@dimen/dp_3"
                     android:layout_marginEnd="@dimen/dp_8"
+                    android:textColor="@color/text_color"
                     android:text="@{user.location.city+','+' '+user.location.state+','+'\n'+user.location.country}"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,24 +1,15 @@
 package com.example.albertsome_task.ui.home
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.widget.AppCompatButton
-import androidx.appcompat.widget.AppCompatEditText
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
-import com.example.albertsome_task.R
-import com.example.albertsome_task.adapter.UserAdapter
 import com.example.albertsome_task.adapter.UserPagingDataAdapter
 import com.example.albertsome_task.databinding.FragmentHomeBinding
-import com.example.albertsome_task.sealed.NetworkResult
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -29,6 +20,7 @@ class FragmentHome : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private val viewModel: UserPagerViewModel by viewModels<UserPagerViewModel>()
     private lateinit var adapter: UserPagingDataAdapter
+    private var navigated = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,11 +38,14 @@ class FragmentHome : Fragment() {
         setupUserList()
         observeUser()
         setListener()
-        viewModel.fetchUser(10)
+        if(!navigated){
+            viewModel.fetchUser(10)
+        }
     }
 
     private fun setupUserList(){
         adapter = UserPagingDataAdapter({user ->
+            navigated = true
             val action = FragmentHomeDirections.actionFragmentHomeToFragmentUserDetail(user)
             findNavController().navigate(action)
         })
@@ -61,6 +56,7 @@ class FragmentHome : Fragment() {
     private fun observeUser(){
         lifecycleScope.launch{
             viewModel.userFlow.collectLatest {pagingData->
+                binding.progress.hide()
                 adapter.submitData(pagingData)
             }
         }
