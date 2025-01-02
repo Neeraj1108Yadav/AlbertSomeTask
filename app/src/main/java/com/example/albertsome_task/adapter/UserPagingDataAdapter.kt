@@ -8,7 +8,11 @@ import com.example.albertsome_task.adapter.UserPagingDataAdapter.ViewHolder
 import com.example.albertsome_task.databinding.ListUserBinding
 import com.example.albertsome_task.model.User
 
-class UserPagingDataAdapter(private val onClickListener:(User) -> Unit) : PagingDataAdapter<User,ViewHolder>(User.DIFF_CALLBACK) {
+class UserPagingDataAdapter(
+    private val onClickListener:(User) -> Unit,
+    private val searchView:(Boolean)-> Unit) : PagingDataAdapter<User,ViewHolder>(User.DIFF_CALLBACK) {
+
+    private var enableSearchView:Boolean = false
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -25,6 +29,10 @@ class UserPagingDataAdapter(private val onClickListener:(User) -> Unit) : Paging
     ) {
         val user = getItem(position)
         user?.let {
+            if(!enableSearchView){
+                enableSearchView = true
+                searchView.invoke(true)
+            }
             holder.binding.user = it
         }
 
