@@ -36,18 +36,34 @@
         android:fontFamily="@font/poppins_medium"
         android:digits="0123456789"/>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputNumber"
+        android:gravity="center"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/error_color"
+        android:visibility="gone"
+        android:fontFamily="@font/poppins_medium" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnFetch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_15"
         android:layout_marginEnd="@dimen/dp_15"
-        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
         android:paddingStart="@dimen/dp_30"
         android:paddingEnd="@dimen/dp_30"
         android:layout_marginBottom="@dimen/dp_30"
         android:fontFamily="@font/poppins_semi_bold"
-        app:layout_constraintTop_toBottomOf="@id/inputNumber"
+        app:layout_constraintTop_toBottomOf="@id/textError"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

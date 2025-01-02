@@ -30,7 +30,6 @@ class FragmentHome : Fragment() {
     private val viewModel: UserPagerViewModel by viewModels<UserPagerViewModel>()
     private lateinit var adapter: UserPagingDataAdapter
     private var navigated = false
-    private val searchQuery = MutableStateFlow<String?>(null)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
