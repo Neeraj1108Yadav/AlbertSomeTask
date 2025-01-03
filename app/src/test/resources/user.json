@@ -1,0 +1,80 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Nicholas",
+        "last": "Hanson"
+      },
+      "location": {
+        "street": {
+          "number": 9085,
+          "name": "Albert Road"
+        },
+        "city": "Newport",
+        "state": "Bedfordshire",
+        "country": "United Kingdom",
+        "postcode": "AO2O 4AP",
+        "coordinates": {
+          "latitude": "-10.7923",
+          "longitude": "-28.0891"
+        },
+        "timezone": {
+          "offset": "+3:00",
+          "description": "Baghdad, Riyadh, Moscow, St. Petersburg"
+        }
+      },
+      "email": "nicholas.hanson@example.com",
+      "dob": {
+        "date": "1967-09-27T19:10:06.578Z",
+        "age": 57
+      },
+      "phone": "0114564 081 3175",
+      "cell": "07477 623317",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/39.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/39.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/39.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Brittany",
+        "last": "Cooper"
+      },
+      "location": {
+        "street": {
+          "number": 1456,
+          "name": "Thornridge Cir"
+        },
+        "city": "Carrollton",
+        "state": "Connecticut",
+        "country": "United States",
+        "postcode": 74322,
+        "coordinates": {
+          "latitude": "-55.4888",
+          "longitude": "-47.6722"
+        },
+        "timezone": {
+          "offset": "+9:00",
+          "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+        }
+      },
+      "email": "brittany.cooper@example.com",
+      "dob": {
+        "date": "1976-06-13T21:38:28.778Z",
+        "age": 48
+      },
+      "phone": "(522) 671-2428",
+      "cell": "(260) 657-7775",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/36.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/36.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/36.jpg"
+      }
+    }
+  ]
+}

@@ -42,6 +42,17 @@ android {
     buildFeatures {
         dataBinding = true
     }
+
+    sourceSets{
+        this.getByName("test"){
+            res.srcDir("src/test/res")
+            assets.srcDir("src/test/assets")
+        }
+    }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 dependencies {
@@ -61,7 +72,6 @@ dependencies {
     implementation(libs.com.gson)
     implementation(libs.squareup.okhttp)
     implementation(libs.squareup.okhttp.logging.interceptor)
-    implementation(libs.squareup.okhttp.mockwebserver)
 
     //Hilt
     implementation(libs.hilt.android)
@@ -85,6 +95,15 @@ dependencies {
     //Pagination
     implementation(libs.androidx.paging)
 
+    //Local Unit Test
+    testImplementation(libs.google.truth)
+    testImplementation(libs.androidx.paging.testing)
+    testImplementation(libs.androidx.coroutine.testing)
+    testImplementation(libs.hilt.testing)
+    kaptTest(libs.hilt.compiler)
+    testImplementation(libs.squareup.okhttp.mockwebserver)
+    testImplementation(libs.io.mockk)
+    testImplementation(libs.org.robolectric)
 }
 
 kapt {

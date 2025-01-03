@@ -18,6 +18,9 @@ arch_version = "2.2.0"
 nav_version = "2.8.5"
 glide_version = "4.16.0"
 paging_version = "3.3.5"
+truth_version = "1.4.4"
+mockk_version = "1.13.12"
+robo_electric = "4.14.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,9 +42,11 @@ squareup-okhttp-mockwebserver = {group = "com.squareup.okhttp3", name = "mockweb
 #Hilt
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt"}
 hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt"}
+hilt-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt"}
 
 #Corotuine
 androidx-coroutine = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutine" }
+androidx-coroutine-testing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutine" }
 
 #Architecture Components
 androidx-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle_version"}
@@ -58,6 +63,16 @@ androidx-glide = {group = "com.github.bumptech.glide", name="glide", version.ref
 
 #Paging
 androidx-paging = {group = "androidx.paging", name="paging-runtime", version.ref="paging_version"}
+androidx-paging-testing = {group = "androidx.paging", name="paging-common", version.ref="paging_version"}
+
+#Google-Truth
+google-truth = {group="com.google.truth",name="truth",version.ref="truth_version"}
+
+#Mockk
+io-mockk = {group="io.mockk",name="mockk",version.ref="mockk_version"}
+
+#Roboelectric
+org-robolectric = {group="org.robolectric",name="robolectric",version.ref="robo_electric"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
