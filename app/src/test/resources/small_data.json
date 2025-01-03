@@ -1,0 +1,384 @@
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Agnelo",
+                "last": "da Mata"
+            },
+            "location": {
+                "street": {
+                    "number": 8369,
+                    "name": "Rua Dezessete "
+                },
+                "city": "Santana de Parnaíba",
+                "state": "Acre",
+                "country": "Brazil",
+                "postcode": 72111,
+                "coordinates": {
+                    "latitude": "-79.5160",
+                    "longitude": "-100.3832"
+                },
+                "timezone": {
+                    "offset": "+10:00",
+                    "description": "Eastern Australia, Guam, Vladivostok"
+                }
+            },
+            "email": "agnelo.damata@example.com",
+            "dob": {
+                "date": "1961-02-10T14:13:39.452Z",
+                "age": 63
+            },
+            "phone": "(18) 7350-6017",
+            "cell": "(39) 7812-2264",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/22.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/22.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/22.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Amin",
+                "last": "Aarsand"
+            },
+            "location": {
+                "street": {
+                    "number": 7920,
+                    "name": "Halvdan Svartes gate"
+                },
+                "city": "Ål",
+                "state": "Finnmark - Finnmárku",
+                "country": "Norway",
+                "postcode": "0369",
+                "coordinates": {
+                    "latitude": "-67.1217",
+                    "longitude": "92.7469"
+                },
+                "timezone": {
+                    "offset": "-4:00",
+                    "description": "Atlantic Time (Canada), Caracas, La Paz"
+                }
+            },
+            "email": "amin.aarsand@example.com",
+            "dob": {
+                "date": "1995-11-07T19:49:27.236Z",
+                "age": 29
+            },
+            "phone": "51216009",
+            "cell": "41671944",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/25.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/25.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/25.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Eugenio",
+                "last": "Nieto"
+            },
+            "location": {
+                "street": {
+                    "number": 2574,
+                    "name": "Avenida de La Albufera"
+                },
+                "city": "Lorca",
+                "state": "Región de Murcia",
+                "country": "Spain",
+                "postcode": 52528,
+                "coordinates": {
+                    "latitude": "-21.3762",
+                    "longitude": "-80.8971"
+                },
+                "timezone": {
+                    "offset": "-10:00",
+                    "description": "Hawaii"
+                }
+            },
+            "email": "eugenio.nieto@example.com",
+            "dob": {
+                "date": "1945-06-28T18:46:42.830Z",
+                "age": 79
+            },
+            "phone": "929-354-919",
+            "cell": "633-110-522",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/95.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/95.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/95.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Rubén",
+                "last": "Pulido"
+            },
+            "location": {
+                "street": {
+                    "number": 1196,
+                    "name": "Continuación China"
+                },
+                "city": "San Martín Cachihuapan",
+                "state": "Queretaro",
+                "country": "Mexico",
+                "postcode": 11225,
+                "coordinates": {
+                    "latitude": "-72.5370",
+                    "longitude": "-57.5244"
+                },
+                "timezone": {
+                    "offset": "0:00",
+                    "description": "Western Europe Time, London, Lisbon, Casablanca"
+                }
+            },
+            "email": "ruben.pulido@example.com",
+            "dob": {
+                "date": "1976-11-21T04:51:04.086Z",
+                "age": 48
+            },
+            "phone": "(680) 099 5247",
+            "cell": "(638) 238 1135",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/57.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/57.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/57.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "Mrs",
+                "first": "Elizabeth",
+                "last": "Wheeler"
+            },
+            "location": {
+                "street": {
+                    "number": 3480,
+                    "name": "Highfield Road"
+                },
+                "city": "Manchester",
+                "state": "Warwickshire",
+                "country": "United Kingdom",
+                "postcode": "ZR5T 8PA",
+                "coordinates": {
+                    "latitude": "-21.7764",
+                    "longitude": "-122.3902"
+                },
+                "timezone": {
+                    "offset": "-1:00",
+                    "description": "Azores, Cape Verde Islands"
+                }
+            },
+            "email": "elizabeth.wheeler@example.com",
+            "dob": {
+                "date": "1972-02-23T05:25:29.329Z",
+                "age": 52
+            },
+            "phone": "016973 25156",
+            "cell": "07891 063785",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/23.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/23.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/23.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Maëva",
+                "last": "Bonnet"
+            },
+            "location": {
+                "street": {
+                    "number": 4990,
+                    "name": "Quai Charles-De-Gaulle"
+                },
+                "city": "Grenoble",
+                "state": "Allier",
+                "country": "France",
+                "postcode": 78063,
+                "coordinates": {
+                    "latitude": "72.1148",
+                    "longitude": "-17.1790"
+                },
+                "timezone": {
+                    "offset": "-11:00",
+                    "description": "Midway Island, Samoa"
+                }
+            },
+            "email": "maeva.bonnet@example.com",
+            "dob": {
+                "date": "1948-04-26T14:53:32.608Z",
+                "age": 76
+            },
+            "phone": "05-03-53-85-46",
+            "cell": "06-03-29-34-88",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/82.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/82.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/82.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Jacqueline",
+                "last": "Rice"
+            },
+            "location": {
+                "street": {
+                    "number": 6243,
+                    "name": "Miller Ave"
+                },
+                "city": "Oklahoma City",
+                "state": "Missouri",
+                "country": "United States",
+                "postcode": 79418,
+                "coordinates": {
+                    "latitude": "-62.3171",
+                    "longitude": "40.4807"
+                },
+                "timezone": {
+                    "offset": "-11:00",
+                    "description": "Midway Island, Samoa"
+                }
+            },
+            "email": "jacqueline.rice@example.com",
+            "dob": {
+                "date": "1955-12-16T20:00:05.595Z",
+                "age": 69
+            },
+            "phone": "(612) 370-5620",
+            "cell": "(568) 644-0993",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/28.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/28.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/28.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Herman",
+                "last": "Harris"
+            },
+            "location": {
+                "street": {
+                    "number": 3420,
+                    "name": "Brick Kiln Road"
+                },
+                "city": "Sheffield",
+                "state": "Cleveland",
+                "country": "United Kingdom",
+                "postcode": "CN6P 0XZ",
+                "coordinates": {
+                    "latitude": "6.6256",
+                    "longitude": "-29.9918"
+                },
+                "timezone": {
+                    "offset": "-1:00",
+                    "description": "Azores, Cape Verde Islands"
+                }
+            },
+            "email": "herman.harris@example.com",
+            "dob": {
+                "date": "1944-09-22T17:10:04.967Z",
+                "age": 80
+            },
+            "phone": "015242 58208",
+            "cell": "07031 156531",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/33.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/33.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Elsa",
+                "last": "Ahola"
+            },
+            "location": {
+                "street": {
+                    "number": 3620,
+                    "name": "Aleksanterinkatu"
+                },
+                "city": "Reisjärvi",
+                "state": "Åland",
+                "country": "Finland",
+                "postcode": 99871,
+                "coordinates": {
+                    "latitude": "-40.4827",
+                    "longitude": "55.1616"
+                },
+                "timezone": {
+                    "offset": "+5:45",
+                    "description": "Kathmandu"
+                }
+            },
+            "email": "elsa.ahola@example.com",
+            "dob": {
+                "date": "1958-01-18T04:22:20.333Z",
+                "age": 66
+            },
+            "phone": "09-263-563",
+            "cell": "047-515-84-29",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/12.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/12.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/12.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Clifford",
+                "last": "Moore"
+            },
+            "location": {
+                "street": {
+                    "number": 9490,
+                    "name": "Fincher Rd"
+                },
+                "city": "Lowell",
+                "state": "Wyoming",
+                "country": "United States",
+                "postcode": 80994,
+                "coordinates": {
+                    "latitude": "-60.0220",
+                    "longitude": "-26.9528"
+                },
+                "timezone": {
+                    "offset": "-7:00",
+                    "description": "Mountain Time (US & Canada)"
+                }
+            },
+            "email": "clifford.moore@example.com",
+            "dob": {
+                "date": "1999-05-10T07:03:35.121Z",
+                "age": 25
+            },
+            "phone": "(267) 262-0708",
+            "cell": "(782) 874-4794",
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/45.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/45.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/45.jpg"
+            }
+        }
+    ]
+}

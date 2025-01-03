@@ -3,7 +3,6 @@ package com.example.albertsome_task.repo
 import com.example.albertsome_task.Helper
 import com.example.albertsome_task.network.ApiService
 import com.google.gson.Gson
-import com.google.gson.JsonParser
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.test.runTest
@@ -33,8 +32,6 @@ class UserRepoTest {
 
     @Inject
     lateinit var mockWebServer: MockWebServer
-
-    private val gson = Gson()
 
     @Before
     fun setup(){
@@ -81,7 +78,7 @@ class UserRepoTest {
     @Test
     fun `test empty response`() = runTest {
         // Arrange
-        val mockData = """{"results": []}"""
+        val mockData = Helper.getJsonFile("empty_result.json")
         val mockResponse = MockResponse()
             .setResponseCode(200)
             .setBody(mockData)
