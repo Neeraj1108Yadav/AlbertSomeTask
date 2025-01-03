@@ -60,6 +60,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:src="@drawable/ic_age_sort"
+                    android:visibility="gone"
                     android:padding="@dimen/dp_10"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
