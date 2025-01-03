@@ -10,11 +10,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.paging.PagingData
 import androidx.paging.flatMap
 import androidx.paging.map
 import androidx.recyclerview.widget.RecyclerView
 import com.example.albertsome_task.adapter.UserPagingDataAdapter
 import com.example.albertsome_task.databinding.FragmentHomeBinding
+import com.example.albertsome_task.model.User
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -84,6 +86,10 @@ class FragmentHome : Fragment() {
 
         binding.btnAddUser.setOnClickListener{
             showDialog()
+        }
+
+        binding.btnSortAge.setOnClickListener{
+
         }
 
         binding.edSearchView.addTextChangedListener(object : TextWatcher{

@@ -42,6 +42,9 @@ class UserPagerViewModel @Inject constructor(private val userListener: RandomUse
     private var _searchQuery = MutableStateFlow("")
     private val searchQuery: StateFlow<String> = _searchQuery
 
+    private var _ageSort = MutableStateFlow(false)
+    private val ageSort: StateFlow<Boolean> = _ageSort
+
     private var totalRequiredRecords = 10
     private var fetchedRecords = 0
 
